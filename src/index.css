@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Global CSS Reset & Box-Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbars for serious developer tools */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Disable user selection during active splitter drag */
+.is-dragging-splitter {
+  user-select: none !important;
+  cursor: col-resize !important;
+}
+
+.is-dragging-splitter-row {
+  user-select: none !important;
+  cursor: row-resize !important;
+}
